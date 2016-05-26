@@ -1,0 +1,22 @@
+{
+  "name": "GoBus",
+  "version": "0.1.0",
+  "summary": "A short description of GoBus.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/GoBus",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Orlando Amorim": "orlandoamorimdev@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/GoBus.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "GoBus/Classes/**/*"
+}

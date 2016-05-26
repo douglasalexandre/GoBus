@@ -1,0 +1,16 @@
+PODS:
+  - GoBus (0.1.0)
+
+DEPENDENCIES:
+  - GoBus (from `../`)
+
+EXTERNAL SOURCES:
+  GoBus:
+    :path: ../
+
+SPEC CHECKSUMS:
+  GoBus: 16fbf8a7ffdbaa991a94db3b30eb4dfab16e8837
+
+PODFILE CHECKSUM: f204145e0ca348e2c6368d8bc52be01cd4bc94d5
+
+COCOAPODS: 1.0.0
