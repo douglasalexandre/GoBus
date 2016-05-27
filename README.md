@@ -137,7 +137,7 @@ let cancel = go.getBus(inLine: "0408", repeatAfter: 5) { (buss, line, error) in 
 //Using this way (3), now you can cancel repeat After and the call protocol
 go.cancel(cancel)
 ```
-### See more like how get Line and Stops in Exemple Project
+### See more like how get Line and Stops in Example Project
 
 ## Installation
 
