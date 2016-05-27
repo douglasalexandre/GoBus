@@ -163,8 +163,8 @@ $ pod install
 ## **To-Do List**
 ---
 
-- [] Add ability to stop being sought by lines 
-- [] Improve Documentation
+- [ ] Add ability to stop being sought by lines 
+- [ ] Improve Documentation
 
 ## Author
 
