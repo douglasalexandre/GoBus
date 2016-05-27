@@ -11,7 +11,7 @@
 
 ## Introduction
 
-**GoBus!** is a library to help developers to interact with Inthegra API. We provide an easy way to get data and some new features not implemented on api.
+**GoBus!** is a library to help developers to interact with Inthegra API in Swift. We provide an easy way to get data and some new features not implemented on api.
 
 ## Requirements
 
