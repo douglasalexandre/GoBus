@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        GoBus().setupWithApiKey(<#T##apiKey: String##String#>, email: <#T##String#>, password: <#T##String#>, url: <#T##String#>)
+        //GoBus().setupWithApiKey(<#T##apiKey: String##String#>, email: <#T##String#>, password: <#T##String#>, url: <#T##String#>)
+        GoBus().setupWithApiKey("ad358eee63044fee947ec296c8c5a62f", email: "orlando.filho95@icloud.com", password: "Filho1995", url: "https://api.inthegra.strans.teresina.pi.gov.br/v1")
         return true
     }
 

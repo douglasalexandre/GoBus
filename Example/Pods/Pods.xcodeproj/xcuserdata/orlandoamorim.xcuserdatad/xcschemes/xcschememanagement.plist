@@ -8,22 +8,16 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>0</integer>
 		</dict>
 		<key>Pods-GoBus_Example.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Pods-GoBus_Tests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -33,12 +27,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>35BF6A805568681C98F4FB2D3EA32387</key>
+		<key>2E6BB3D296B98DCE21579306A343270D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C9D1A4237CCFEA8B318787991517D785</key>
+		<key>35BF6A805568681C98F4FB2D3EA32387</key>
 		<dict>
 			<key>primary</key>
 			<true/>

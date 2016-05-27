@@ -105,8 +105,9 @@ public class GoBus {
     private func get(type:GoBusGetTypes, search: String?=nil, completionHandler: (NSData?, NSURLResponse?, NSError?) -> Void){
         
         if self.goBusUser == nil {
-            completionHandler(nil, nil, NSError(domain: "No Api Key foud", code: 80, userInfo: nil))
-            return
+            sleep(2)
+//            completionHandler(nil, nil, NSError(domain: "No Api Key foud", code: 80, userInfo: nil))
+//            return
         }
         
         let nsurl: NSURL = search != nil ? NSURL(string: "\(goBusUser!.url)/\(type.rawValue)\(search!)")! : NSURL(string: "\(goBusUser!.url)/\(type.rawValue)")!
@@ -119,9 +120,6 @@ public class GoBus {
         request.HTTPShouldHandleCookies = false
 
         let task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
-            print(data)
-            print(response)
-            print(error)
             completionHandler(data, response, error)
         })
         

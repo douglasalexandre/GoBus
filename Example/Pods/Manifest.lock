@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  GoBus: 16fbf8a7ffdbaa991a94db3b30eb4dfab16e8837
+  GoBus: c55bd1c8ff81fffb0dbc714a8c3fbb18062bac64
 
 PODFILE CHECKSUM: f204145e0ca348e2c6368d8bc52be01cd4bc94d5
 

@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0E89A1963BC89479D71CC92A88C656E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		133E6253AFEED968D7974FDD9824B23C /* GoBus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 756F9008C4F187F6C543410FF9A349E1 /* GoBus-dummy.m */; };
-		186562581CF6D7C00022BEA8 /* GoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186562551CF6D7C00022BEA8 /* GoHelper.swift */; };
-		186562591CF6D7C00022BEA8 /* GoBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186562561CF6D7C00022BEA8 /* GoBus.swift */; };
-		1865625A1CF6D7C00022BEA8 /* DataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186562571CF6D7C00022BEA8 /* DataTypes.swift */; };
 		33A4C9085A163189F7D249C46FD2732A /* Pods-GoBus_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28069DE57365C54B28C0F629E3929668 /* Pods-GoBus_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46F9BCFFC8130BC021E163650DF1D332 /* Pods-GoBus_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 167E060AF1C8B476E37A73AAF07EB5F8 /* Pods-GoBus_Example-dummy.m */; };
+		518C56E606767709803FC490C580CF79 /* GoBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA782EB74A86F0FDA4066AC9DBA96E7 /* GoBus.swift */; };
 		57A10A43FAEB2402FA5956C0AFB06110 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		58D2D4F675A5E94E0B6B637F9326E05F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		67F1C7754262978D6207D58AD321FE39 /* Pods-GoBus_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26D7497B242C1F9D49ADE7BF973C5586 /* Pods-GoBus_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B347304D84319E80F99330558078027C /* GoBus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D9B42AE551AC3B74680055E775FBEE9 /* GoBus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		736F79CA801FDBA879D5A7989AB3B105 /* GoBus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D9B42AE551AC3B74680055E775FBEE9 /* GoBus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5B463C70D0C9C532C92B4C21A7E56A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		BE7948EE1E323BAE7E5CFED9A4A187E8 /* DataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF783DE86256FB57D5960FC9FB9A6B57 /* DataTypes.swift */; };
+		C327EFE19B8BBF2AC045EBAED90A4DA3 /* GoBus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 756F9008C4F187F6C543410FF9A349E1 /* GoBus-dummy.m */; };
+		E387C8C85A5A79894E154FCE6240E8A8 /* GoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B48EB31402AD6E0CACEC4D6CB5A183 /* GoHelper.swift */; };
 		EC5D219331E39A39AA22B70DF1592219 /* Pods-GoBus_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EA3EAB321CD65C113BC5A99F4431D5 /* Pods-GoBus_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +26,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C9D1A4237CCFEA8B318787991517D785;
+			remoteGlobalIDString = 2E6BB3D296B98DCE21579306A343270D;
 			remoteInfo = GoBus;
 		};
 /* End PBXContainerItemProxy section */
@@ -37,9 +37,6 @@
 		0D9B42AE551AC3B74680055E775FBEE9 /* GoBus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoBus-umbrella.h"; sourceTree = "<group>"; };
 		12BDB5FD19707328F5064DB61CE35252 /* Pods-GoBus_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoBus_Example.release.xcconfig"; sourceTree = "<group>"; };
 		167E060AF1C8B476E37A73AAF07EB5F8 /* Pods-GoBus_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoBus_Example-dummy.m"; sourceTree = "<group>"; };
-		186562551CF6D7C00022BEA8 /* GoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoHelper.swift; sourceTree = "<group>"; };
-		186562561CF6D7C00022BEA8 /* GoBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoBus.swift; sourceTree = "<group>"; };
-		186562571CF6D7C00022BEA8 /* DataTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTypes.swift; sourceTree = "<group>"; };
 		1D219BDEF78126E2FA6B20E0E6B02968 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26D7497B242C1F9D49ADE7BF973C5586 /* Pods-GoBus_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoBus_Tests-umbrella.h"; sourceTree = "<group>"; };
 		28069DE57365C54B28C0F629E3929668 /* Pods-GoBus_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoBus_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -47,6 +44,7 @@
 		2EB087C84E1A6BCEA2F04879CD27CAA0 /* GoBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		311F3CA341F9E4796E90AC36D844A49E /* Pods-GoBus_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoBus_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		33605B09EFA31F45AA5B4E8E368075EE /* Pods_GoBus_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoBus_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33B48EB31402AD6E0CACEC4D6CB5A183 /* GoHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GoHelper.swift; sourceTree = "<group>"; };
 		3A4267F7E043995D6C70644AD56E09D4 /* GoBus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GoBus.modulemap; sourceTree = "<group>"; };
 		3E3A23CF07F30F4ABBB4E75F268C3CA3 /* Pods-GoBus_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoBus_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		482CDA168332E1665322798B17633612 /* Pods-GoBus_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GoBus_Example-resources.sh"; sourceTree = "<group>"; };
@@ -58,8 +56,10 @@
 		86906D1C4EB4BD39D4735577D26C4121 /* Pods-GoBus_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GoBus_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E6193144BF51D27A1D54B121E769BA3 /* Pods-GoBus_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GoBus_Tests.modulemap"; sourceTree = "<group>"; };
+		AEA782EB74A86F0FDA4066AC9DBA96E7 /* GoBus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GoBus.swift; sourceTree = "<group>"; };
 		C3D18FB0707CBD4051E9769BC05243F8 /* Pods-GoBus_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GoBus_Example-frameworks.sh"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CF783DE86256FB57D5960FC9FB9A6B57 /* DataTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataTypes.swift; sourceTree = "<group>"; };
 		CFB3118274EBF5CB4BBDA39F49BAA74F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8BAF59064EE28FF6A523549D4099E43 /* Pods-GoBus_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoBus_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DA4B2125776E1F1A6171F1C3A8FA6ACD /* Pods-GoBus_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoBus_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -85,11 +85,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8092BC33CF1A039C86B0EF447EA69293 /* Frameworks */ = {
+		D60B7BBD0CD3E8C475DEEEC0F154D1C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58D2D4F675A5E94E0B6B637F9326E05F /* Foundation.framework in Frameworks */,
+				A5B463C70D0C9C532C92B4C21A7E56A6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +104,16 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
+		23DC15A9ECBB4A8C53435097B6A88BA7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CF783DE86256FB57D5960FC9FB9A6B57 /* DataTypes.swift */,
+				AEA782EB74A86F0FDA4066AC9DBA96E7 /* GoBus.swift */,
+				33B48EB31402AD6E0CACEC4D6CB5A183 /* GoHelper.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		23E1DF8D386257E9158EB9402FC81FC1 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,10 +123,10 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		26C26155A12BCC30BECDE7A3F3A2152A /* GoBus */ = {
+		3622EA03A5534BD5E781FAA171A10009 /* GoBus */ = {
 			isa = PBXGroup;
 			children = (
-				F407375E16E680A6C4A826E07FE78090 /* Classes */,
+				23DC15A9ECBB4A8C53435097B6A88BA7 /* Classes */,
 			);
 			path = GoBus;
 			sourceTree = "<group>";
@@ -211,21 +221,11 @@
 		E4DEAFCD1981A86196B9F4C62FFBD6A4 /* GoBus */ = {
 			isa = PBXGroup;
 			children = (
-				26C26155A12BCC30BECDE7A3F3A2152A /* GoBus */,
+				3622EA03A5534BD5E781FAA171A10009 /* GoBus */,
 				931A1B651B43E71E8FEB12402147B7F2 /* Support Files */,
 			);
 			name = GoBus;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		F407375E16E680A6C4A826E07FE78090 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				186562551CF6D7C00022BEA8 /* GoHelper.swift */,
-				186562561CF6D7C00022BEA8 /* GoBus.swift */,
-				186562571CF6D7C00022BEA8 /* DataTypes.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,19 +239,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F3F61589A11E9E2048695CB99641B57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				736F79CA801FDBA879D5A7989AB3B105 /* GoBus-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71461D0B1AF18AAC9FFB645557C5A785 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				67F1C7754262978D6207D58AD321FE39 /* Pods-GoBus_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9FC230EFBC106B72503763A4435FE589 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B347304D84319E80F99330558078027C /* GoBus-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +276,23 @@
 			productReference = 73168730093E504EAB46697C472358D7 /* Pods_GoBus_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		2E6BB3D296B98DCE21579306A343270D /* GoBus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B369612E4A1CC7EE526F8BE337D565C /* Build configuration list for PBXNativeTarget "GoBus" */;
+			buildPhases = (
+				9D30E69AB28EE6CFFA184EBD6FFE5D7A /* Sources */,
+				D60B7BBD0CD3E8C475DEEEC0F154D1C9 /* Frameworks */,
+				1F3F61589A11E9E2048695CB99641B57 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoBus;
+			productName = GoBus;
+			productReference = 2EB087C84E1A6BCEA2F04879CD27CAA0 /* GoBus.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		35BF6A805568681C98F4FB2D3EA32387 /* Pods-GoBus_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 087361896CBF502B5297B18AF6DE234D /* Build configuration list for PBXNativeTarget "Pods-GoBus_Tests" */;
@@ -291,23 +308,6 @@
 			name = "Pods-GoBus_Tests";
 			productName = "Pods-GoBus_Tests";
 			productReference = 33605B09EFA31F45AA5B4E8E368075EE /* Pods_GoBus_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C9D1A4237CCFEA8B318787991517D785 /* GoBus */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C025F1E4798D401E72AB8DBC3FFEDCB5 /* Build configuration list for PBXNativeTarget "GoBus" */;
-			buildPhases = (
-				B6553B5E7A8D35326AF9903AAA7F88E2 /* Sources */,
-				8092BC33CF1A039C86B0EF447EA69293 /* Frameworks */,
-				9FC230EFBC106B72503763A4435FE589 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GoBus;
-			productName = GoBus;
-			productReference = 2EB087C84E1A6BCEA2F04879CD27CAA0 /* GoBus.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -331,7 +331,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C9D1A4237CCFEA8B318787991517D785 /* GoBus */,
+				2E6BB3D296B98DCE21579306A343270D /* GoBus */,
 				07471EDFFEABE9355C80ECECCC47D12C /* Pods-GoBus_Example */,
 				35BF6A805568681C98F4FB2D3EA32387 /* Pods-GoBus_Tests */,
 			);
@@ -355,14 +355,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6553B5E7A8D35326AF9903AAA7F88E2 /* Sources */ = {
+		9D30E69AB28EE6CFFA184EBD6FFE5D7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				186562591CF6D7C00022BEA8 /* GoBus.swift in Sources */,
-				1865625A1CF6D7C00022BEA8 /* DataTypes.swift in Sources */,
-				133E6253AFEED968D7974FDD9824B23C /* GoBus-dummy.m in Sources */,
-				186562581CF6D7C00022BEA8 /* GoHelper.swift in Sources */,
+				BE7948EE1E323BAE7E5CFED9A4A187E8 /* DataTypes.swift in Sources */,
+				C327EFE19B8BBF2AC045EBAED90A4DA3 /* GoBus-dummy.m in Sources */,
+				518C56E606767709803FC490C580CF79 /* GoBus.swift in Sources */,
+				E387C8C85A5A79894E154FCE6240E8A8 /* GoHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +372,7 @@
 		325B63C082B26A7C2376D894638E95A1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoBus;
-			target = C9D1A4237CCFEA8B318787991517D785 /* GoBus */;
+			target = 2E6BB3D296B98DCE21579306A343270D /* GoBus */;
 			targetProxy = BCFB4C71E36A4B5DF69FEFAFCAC6A5DB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -474,37 +474,6 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_GoBus_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7D95DF5D0B50284E2BD5BB5163394699 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74E51DC0EBE04789E681C64EE71D7431 /* GoBus.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GoBus/GoBus-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GoBus/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GoBus/GoBus.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = GoBus;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -622,11 +591,10 @@
 			};
 			name = Debug;
 		};
-		EB2316D193010BCD45D5009917B7E1AC /* Release */ = {
+		EA177F3EAAB37EAF93D8F328D7C75F78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 74E51DC0EBE04789E681C64EE71D7431 /* GoBus.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -652,6 +620,36 @@
 			};
 			name = Release;
 		};
+		F083BD5A33B66D57B2F18FEFF6E50084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74E51DC0EBE04789E681C64EE71D7431 /* GoBus.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoBus/GoBus-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoBus/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoBus/GoBus.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GoBus;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -660,6 +658,15 @@
 			buildConfigurations = (
 				9846C5BF182D708DE74A20D4AE489917 /* Debug */,
 				1C58833CF6B1A6F5DB58E5735201A624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B369612E4A1CC7EE526F8BE337D565C /* Build configuration list for PBXNativeTarget "GoBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F083BD5A33B66D57B2F18FEFF6E50084 /* Debug */,
+				EA177F3EAAB37EAF93D8F328D7C75F78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -678,15 +685,6 @@
 			buildConfigurations = (
 				427E15B4822F07FEAB6B3C9F3A3FE0AC /* Debug */,
 				7FA3C4997CBAB3365570F8ABEDC69298 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C025F1E4798D401E72AB8DBC3FFEDCB5 /* Build configuration list for PBXNativeTarget "GoBus" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D95DF5D0B50284E2BD5BB5163394699 /* Debug */,
-				EB2316D193010BCD45D5009917B7E1AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,9 +1,9 @@
 {
   "name": "GoBus",
   "version": "0.1.0",
-  "summary": "A short description of GoBus.",
+  "summary": "Elegant way to get data from Inthegra API.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/GoBus",
+  "homepage": "https://github.com/orlandoamorim/GoBus",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,9 +12,10 @@
     "Orlando Amorim": "orlandoamorimdev@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/GoBus.git",
+    "git": "https://github.com/orlandoamorim/GoBus.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/or_amorim",
   "platforms": {
     "ios": "8.0"
   },
