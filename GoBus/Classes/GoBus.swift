@@ -35,6 +35,7 @@ public class GoBus {
 
     public var delegate:GoBusDelegate?
     
+    ///Data from the current user of the Inthegra API
     public var goBusUser: GoBusUser? {
         get {
             let userDefaults = NSUserDefaults.standardUserDefaults()
@@ -45,6 +46,7 @@ public class GoBus {
         }
     }
     
+    ///The Inthegra API Auth Token
     public var token: String? {
         get {
             let userDefaults = NSUserDefaults.standardUserDefaults()
@@ -56,11 +58,22 @@ public class GoBus {
     }
     
     //MARK: Init
-    public init() {
-        
-    }
+    public init() { }
     
-    ///Call this method in AppDelegate to get the token to access the api.
+    /**
+     Call this method to authenticate with Inthegra API and get the Auth Token.
+     
+     ## Important Notes ##
+     1. This method will regenerate the Auth Token automatically.
+     2. Use this method only in AppDelegate.
+     
+     - Parameter apiKey: The corresponding access key of your application.
+     - Parameter email: Your email.
+     - Parameter password: Your password.
+     - Parameter url: The url to access the api. -> https://api.inthegra.strans.teresina.pi.gov.br/version
+     
+     */
+    
     public func setupWithApiKey(apiKey:String, email:String, password:String, url:String) {
         let nsurl: NSURL = NSURL(string: "\(url)/signin")!
         let session = NSURLSession.sharedSession()
@@ -102,12 +115,21 @@ public class GoBus {
         task.resume()
     }
     
+    
+    /**
+     Private method to get data from the Inthegra API.
+    
+     - Parameter type: The requisition type.
+     - Parameter search: Research by user.
+     - Parameter completion:  A closure which is called with NSData?(correspond to the data returned by api), NSURLResponse?  and NSError?(if the api returned error)
+
+     */
+    
     private func get(type:GoBusGetTypes, search: String?=nil, completionHandler: (NSData?, NSURLResponse?, NSError?) -> Void){
         
+        ///If the access token has not yet been generated, wait 2 seconds
         if self.goBusUser == nil {
             sleep(2)
-//            completionHandler(nil, nil, NSError(domain: "No Api Key foud", code: 80, userInfo: nil))
-//            return
         }
         
         let nsurl: NSURL = search != nil ? NSURL(string: "\(goBusUser!.url)/\(type.rawValue)\(search!)")! : NSURL(string: "\(goBusUser!.url)/\(type.rawValue)")!
@@ -125,6 +147,14 @@ public class GoBus {
         
         task.resume()
     }
+    
+    /**
+     Sends an API request to Inthegra for stops with an optional text search
+     
+     - Parameter search: An optional search query
+     - Parameter completion:  A closure which is called with an array of Stop objects and an NSError
+     
+     */
     
     public func getStops(search search: String?=nil, completion: (([Stop]?, NSError?) -> Void)){
         backgroundThread(background: {
@@ -148,6 +178,16 @@ public class GoBus {
             }
         }, completion: nil)
     }
+    
+    /**
+     Sends an API request to Inthegra for stops around a given location with an optional radius
+     
+     - Parameter latitude: The latitude you want search
+     - Parameter longitude: The longitude you want search
+     - Parameter radius: An optional radius to set the maximum area to return Stop objects
+     - Parameter completion:  A closure which is called with the nearest Stop, an array of Stop objects and an NSError
+     
+     */
     
     public func getStopsNearest(latitude latitude: Double, longitude: Double, radius: Int?=nil, completion: ((Stop?,[Stop]?, NSError?) -> Void)){
         let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
@@ -178,7 +218,14 @@ public class GoBus {
         
     }
     
-    ///Return an array with Lines Objects.
+    /**
+     Sends an API request to Inthegra for lines with an optional text search
+     
+     - Parameter search: An optional search query
+     - Parameter completion:  A closure which is called with an array of Line objects and an NSError
+     
+     */
+    
     public func getLines(search search: String?=nil, completion: (([Line]?, NSError?) -> Void)){
         backgroundThread(background: {
             self.get(search != nil ? GoBusGetTypes.BuscaLinha : GoBusGetTypes.Linhas, search: search) { (data, response, error) in
@@ -207,8 +254,18 @@ public class GoBus {
         }, completion: nil)
     }
     
-    ///Return an array with Lines Objects in background. If you want to search for specific buss in line, pass in search.
-    public func getBus(inLine inLine: String?=nil, repeatAfter: Double?=nil, completion: (([Bus]?, [Line]?, NSError?) -> Void)) -> cancelClosure?{
+    /**
+     Sends an API request to Inthegra for stops around a given location with an optional radius
+     
+     - Parameter inLine: An optional search query
+     - Parameter repeatAfter: An optional way to set time in seconds to continuously call this function and returns the results in GoBusDelegate
+     - Parameter completion:  A closure which is called with an array of Bus objects, an array of Line objects and an NSError
+     
+     - Returns: An *cancelClosure* to be used to cancel *repeatAfter* GoBusDelegate call
+     
+     - SeeAlso:  `cancel(_:)` if you will use *GoBusDelegate* and *repeatAfter*
+     
+     */    public func getBus(inLine inLine: String?=nil, repeatAfter: Double?=nil, completion: (([Bus]?, [Line]?, NSError?) -> Void)) -> cancelClosure?{
         
         if repeatAfter != nil {
             return self.repeatAfter(repeatAfter!, closure: {
@@ -287,6 +344,17 @@ public class GoBus {
         return nil
     }
     
+    /**
+     Sends an API request to Inthegra for bus around a given location with an optional search and radius
+     
+     - Parameter latitude: The latitude you want search
+     - Parameter longitude: The longitude you want search
+     - Parameter search: An optional search query for Line
+     - Parameter radius: An optional radius to set the maximum area to return Stop objects
+     - Parameter completion:  A closure which is called with the nearest Bus, an array of Bus objects and an NSError
+     
+     */
+    
     public func getBusNearest(latitude latitude: Double, longitude: Double,inLine: String?=nil, radius: Int?=nil, completion: ((Bus?,[Bus]?, NSError?) -> Void)){
         let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
 
@@ -317,6 +385,22 @@ public class GoBus {
         }
         
     }
+    
+    /**
+     Use this to cancel an repeatAfter call in protocol
+     
+     - Parameter closure: The `cancelClosure` returned by `getBus(_:)` function.
+    
+     - SeeAlso: `getBus(_:)` to use this method
+     
+     */
+    public func cancel(closure:cancelClosure?) {
+        
+        if closure != nil {
+            closure!(cancel: true)
+        }
+    }
+    
     
 //******************************************* Core
     
@@ -355,13 +439,6 @@ public class GoBus {
         }
         
         return cancelableClosure
-    }
-    
-    public func cancel(closure:cancelClosure?) {
-        
-        if closure != nil {
-            closure!(cancel: true)
-        }
     }
     
     private func backgroundThread(delay: Double = 0.0, background: (() -> Void)? = nil, completion: (() -> Void)? = nil) {

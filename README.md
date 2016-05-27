@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        GoBus().setupWithApiKey(<#T##apiKey: String##String#>, email: <#T##String#>, password: <#T##String#>, url: <#T##String#>)
+        GoBus().setupWithApiKey(apiKey: String, email: String, password: String, url: String)
         return true
     }
 }
@@ -63,7 +63,7 @@ We can get bus values by invoking the following three `GoBus` function:
 #### Get All Bus
 
 ```swift
-GoBus().getBus(completion: <#T##(([Bus]?, [Line]?, NSError?) -> Void)##(([Bus]?, [Line]?, NSError?) -> Void)##([Bus]?, [Line]?, NSError?) -> Void#>)
+GoBus().getBus(completion: (([Bus]?, [Line]?, NSError?) -> Void))
 
 GoBus().getBus() { (buss, lines, error) in
     if error != nil {
@@ -91,7 +91,7 @@ Will return an array with Bus objects, an array with Line objects and an NSError
 #### All Bus of specific line
 
 ```swift
-GoBus().getBus(inLine: <#T##String?#>, completion: <#T##(([Bus]?, [Line]?, NSError?) -> Void)##(([Bus]?, [Line]?, NSError?) -> Void)##([Bus]?, [Line]?, NSError?) -> Void#>)
+GoBus().getBus(inLine: String?, completion: (([Bus]?, [Line]?, NSError?) -> Void))
 
 GoBus().getBus(inLine: "0408") { (buss, line, error) in
     if error != nil {
@@ -119,12 +119,12 @@ Pass the number of the line you want to return and will receive an array with Bu
 
 ```swift
 //** repeatAfter works in Seconds
-GoBus().getBus(inLine: <#T##String?#>, repeatAfter: <#T##Double?#>, completion: <#T##(([Bus]?, [Line]?, NSError?) -> Void)##(([Bus]?, [Line]?, NSError?) -> Void)##([Bus]?, [Line]?, NSError?) -> Void#>)
+GoBus().getBus(inLine: String?, repeatAfter: Double?, completion: (([Bus]?, [Line]?, NSError?) -> Void))
 
 //Usage:
 
-//  1: GoBus().getBus(inLine: "0408", repeatAfter: 30, completion: <#T##(([Bus]?, [Line]?, NSError?) -> Void)##(([Bus]?, [Line]?, NSError?) -> Void)##([Bus]?, [Line]?, NSError?) -> Void#>) with Search
-//  2: GoBus().getBus(repeatAfter: 30, completion: <#T##(([Bus]?, [Line]?, NSError?) -> Void)##(([Bus]?, [Line]?, NSError?) -> Void)##([Bus]?, [Line]?, NSError?) -> Void#>) without Search
+//  1: GoBus().getBus(inLine: "0408", repeatAfter: 30, completion: (([Bus]?, [Line]?, NSError?) -> Void)) with Search
+//  2: GoBus().getBus(repeatAfter: 30, completion: (([Bus]?, [Line]?, NSError?) -> Void)) without Search
 
 //  3: In this case, you can use either the first way as the second
 
@@ -137,7 +137,7 @@ let cancel = go.getBus(inLine: "0408", repeatAfter: 5) { (buss, line, error) in 
 //Using this way (3), now you can cancel repeat After and the call protocol
 go.cancel(cancel)
 ```
-### See more in Exemple Project
+### See more like how get Line and Stops in Exemple Project
 
 ## Installation
 

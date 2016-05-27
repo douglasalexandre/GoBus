@@ -28,9 +28,24 @@ import Foundation
 import CoreLocation
 import UIKit
 
+///Used in GoBus.getBus(_:) to continuously update the request
 public protocol GoBusDelegate {
     func getBus(bus:[Bus]?, lines: [Line]?,error: NSError?)
 }
+
+/**
+    Inthegra API request options.
+ 
+ ````
+    case Linhas
+    case BuscaLinha
+    case Paradas
+    case ParadasBusca
+    case ParadasLinhaBusca
+    case Veiculos
+    case VeiculosLinhaBusca
+ ````
+ */
 
 public enum GoBusGetTypes:String {
     case Linhas = "linhas"

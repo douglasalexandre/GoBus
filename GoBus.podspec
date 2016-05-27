@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GoBus'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Elegant way to get data from Inthegra API.'
   s.homepage         = 'https://github.com/orlandoamorim/GoBus'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

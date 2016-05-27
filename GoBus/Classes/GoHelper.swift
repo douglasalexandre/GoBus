@@ -74,7 +74,7 @@ public class Bus : CustomStringConvertible {
     /// The bus stop latitude string
     public let lat: Double
     
-    /// The bus stop long string
+    /// The bus stop longitute string
     public let long: Double
     
     /// The bus stop requisition time string
@@ -95,12 +95,29 @@ public class Bus : CustomStringConvertible {
         return "Code: \(self.code) | Lat: \(self.lat) | Long: \(self.long) | Time: \(self.time)"
     }
     
+    /**
+     Use this method to get the location in `CLLocationCoordinate2D`
+     
+     - Warning: If latitude and longitude are 0.0 will return `nil`.
+     
+     */
+    
     public var location: CLLocationCoordinate2D? {
         if self.lat != 0.0 && long != 0.0 {
             return CLLocationCoordinate2D(latitude: lat, longitude: long)
         }
         return nil
     }
+    
+    /**
+     Use this method to get the distance from another location.
+     
+     - Parameter location: The location you want to compare.
+     - Returns: An *CLLocationDistance* . If latitude
+     
+     - Warning: If latitude and longitude are 0.0 will return `nil`.
+     
+     */
     
     public func distanceFrom(location: CLLocationCoordinate2D) -> CLLocationDistance? {
         if self.lat != 0.0 && long != 0.0 {
@@ -127,7 +144,7 @@ public class Stop : CustomStringConvertible {
     /// The bus stop latitude string
     public let lat: Double
     
-    /// The bus stop long string
+    /// The bus stop longitude string
     public let long: Double
     
     public init(code: String, name: String, address: String, lat: Double, long: Double) {
@@ -146,12 +163,29 @@ public class Stop : CustomStringConvertible {
         return "Code: \(self.code) | Name: \(self.name) | Address: \(self.address) | Lat: \(self.lat) | Long: \(self.long)"
     }
     
+    /**
+     Use this method to get the location in `CLLocationCoordinate2D`
+     
+     - Warning: If latitude and longitude are 0.0 will return `nil`.
+     
+     */
+    
     public var location: CLLocationCoordinate2D? {
         if self.lat != 0.0 && long != 0.0 {
             return CLLocationCoordinate2D(latitude: lat, longitude: long)
         }
         return nil
     }
+    
+    /**
+     Use this method to get the distance from another location.
+     
+     - Parameter location: The location you want to compare.
+     - Returns: An *CLLocationDistance* . If latitude
+     
+     - Warning: If latitude and longitude are 0.0 will return `nil`.
+     
+     */
     
     public func distanceFrom(location: CLLocationCoordinate2D) -> CLLocationDistance? {
         if self.lat != 0.0 && long != 0.0 {
